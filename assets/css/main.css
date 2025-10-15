@@ -2493,6 +2493,13 @@ width: 10px;
   }
 }
 
+/* table border  */
+tbody, td, tfoot, th, thead, tr {
+    border-color: var(--accent-color);
+    border-style: solid;
+    border-width: 0;
+}
+
 
 
 
