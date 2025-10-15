@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>SKILLIFY</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .form-section {
+      transition: opacity 0.3s ease;
+    }
+
+    .form-section.d-none {
+      opacity: 0;
+    }
+
+    /* Hero */
+
+    .hero-section {
+      background-color: #fafafa;
+    }
+
+    .hero-section form input:focus {
+      box-shadow: none;
+    }
+
+    .hero-section .btn-light:hover {
+      background-color: #f1f1f1;
+    }
+
+    .container {
+      max-width: 1280px;
+    }
+  </style>
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center flex-wrap header-items">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">SKILLIFY</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About Us</a></li>
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#services">Employer Services</a></li>
+              <li><a href="#services">Candidate Services</a></li>
+              <li><a href="#services">Service Charges</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Others</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#services">Employer Policy</a></li>
+              <li><a href="#services">Job Offer Letter</a></li>
+              <li><a href="#team">Team</a></li>
+            </ul>
+          </li>
+
+
+          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+
+
+
+      <a class="btn-master d-md-block d-none mx-3" href="javascript:void(0)" data-bs-toggle="modal"
+        data-bs-target="#loginModal">Login
+        / Register</a>
+
+
+
+      <div class="dropdown" style="position: relative; display: inline-block;">
+        <a class="btn-master p-0 d-none d-md-block me-3" href="javascript:void(0);" id="lang-btn">
+          <img src="https://www.sharjeelanjum.com/demos/jobsportal-update/images/lang.png" alt=""
+            style="width:32px;height:32px;">
+        </a>
+        <div id="lang-dropdown">
+
+          <a href="#" title="Arabic" class="dropdown-item px-3 py-2" onclick="changeLanguage('ar')">
+            <span class="flag flag-ar"></span> Arabic
+          </a>
+          <a href="#" title="Bengali" class="dropdown-item px-3 py-2" onclick="changeLanguage('bn')">
+            <span class="flag flag-bn"></span> Bengali
+          </a>
+          <a href="#" title="Chinese" class="dropdown-item px-3 py-2" onclick="changeLanguage('ch')">
+            <span class="flag flag-ch"></span> Chinese
+          </a>
+          <a href="#" title="English" class="dropdown-item px-3 py-2" onclick="changeLanguage('en')">
+            <span class="flag flag-en"></span> English
+          </a>
+          <a href="#" title="Filipino" class="dropdown-item px-3 py-2" onclick="changeLanguage('tl')">
+            <span class="flag flag-tl"></span> Filipino
+          </a>
+          <a href="#" title="French" class="dropdown-item px-3 py-2" onclick="changeLanguage('fr')">
+            <span class="flag flag-fr"></span> French
+          </a>
+          <a href="#" title="Hindi" class="dropdown-item px-3 py-2" onclick="changeLanguage('hi')">
+            <span class="flag flag-hi"></span> Hindi
+          </a>
+          <a href="#" title="Persian" class="dropdown-item px-3 py-2" onclick="changeLanguage('fa')">
+            <span class="flag flag-fa"></span> Persian
+          </a>
+          <a href="#" title="Russian" class="dropdown-item px-3 py-2" onclick="changeLanguage('ru')">
+            <span class="flag flag-ru"></span> Russian
+          </a>
+          <a href="#" title="Turkish" class="dropdown-item px-3 py-2" onclick="changeLanguage('tr')">
+            <span class="flag flag-tr"></span> Turkish
+          </a>
+          <a href="#" title="Urdu" class="dropdown-item px-3 py-2" onclick="changeLanguage('ur')">
+            <span class="flag flag-ur"></span> Urdu
+          </a>
+
+        </div>
+      </div>
+
+
+      <script>
+        document.getElementById('lang-btn').onclick = function (e) {
+          e.preventDefault();
+          var dd = document.getElementById('lang-dropdown');
+          dd.style.display = dd.style.display === 'block' ? 'none' : 'block';
+        };
+        document.addEventListener('click', function (e) {
+          var btn = document.getElementById('lang-btn');
+          var dd = document.getElementById('lang-dropdown');
+          if (!btn.contains(e.target) && !dd.contains(e.target)) {
+            dd.style.display = 'none';
+          }
+        });
+        function changeLanguage(lang) {
+          var select = document.querySelector('.goog-te-combo');
+          if (select) {
+            select.value = lang;
+            select.dispatchEvent(new Event('change'));
+          }
+          document.getElementById('lang-dropdown').style.display = 'none';
+        }
+      </script>
+
+      <!-- Google Translate Widget -->
+      <div id="google_translate_element" style="display:none;"></div>
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+      </script>
+      <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      </script>
+
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
+              <div class="col-md-12">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+              </div>
+              <div class="col-md-12">
+                <label class="form-label">Password</label>
+                <div class="password-wrapper position-relative">
+                  <input type="password" name="password" class="form-control password-field" placeholder="Password"
+                    required>
+                  <i class="bi bi-eye-slash toggle-password position-absolute end-0 top-50 translate-middle-y me-3"></i>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div>
+                  <input type="checkbox" name="remember" id="remember">
+                  <label for="remember"> Remember me</label>
+                  <a href="javascript:void(0)" class="float-end" data-bs-toggle="modal"
+                    data-bs-target="#resetPasswordModal">Forgot Password?</a>
+                </div>
+                <button class="btn-master w-100 mt-3" type="submit">Login</button>
+                <div>
+                  <p class="text-center mt-3">Don't have an account? <a href="javascript:void(0)" data-bs-toggle="modal"
+                      data-bs-target="#registerModal">Register</a></p>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Register Modal -->
+  <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="registerModalLabel">Register</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Toggle Buttons -->
+          <div class="d-flex justify-content-center mb-4">
+            <button type="button" id="btnCandidate" class="btn btn-primary w-50 py-2 me-2 active"><i
+                class="bi bi-person me-2 fs-4 align-middle"></i> <span class="align-middle">Candidate</span></button>
+            <button type="button" id="btnEmployer" class="btn btn-outline-primary w-50 py-2"><i
+                class="bi bi-briefcase me-2 fs-4 align-middle"></i> <span class="align-middle">Employer</span></button>
+          </div>
+
+          <!-- Candidate Form -->
+          <div id="candidateForm" class="form-section">
+            <form action="#" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="row gy-3 mb-4">
+                <div class="col-md-12">
+                  <label class="form-label">Email</label>
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="col-md-12">
+                  <label class="form-label">Password</label>
+                  <div class="password-wrapper position-relative">
+                    <input type="password" name="password" class="form-control password-field" placeholder="Password"
+                      required>
+                    <i
+                      class="bi bi-eye-slash toggle-password position-absolute end-0 top-50 translate-middle-y me-3"></i>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <label class="form-label">Confirm Password</label>
+                  <div class="password-wrapper position-relative">
+                    <input type="password" name="confirm_password" class="form-control password-field"
+                      placeholder="Confirm Password" required>
+                    <i
+                      class="bi bi-eye-slash toggle-password position-absolute end-0 top-50 translate-middle-y me-3"></i>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <label class="form-label">Phone Number</label>
+                  <input type="number" name="phone" class="form-control" placeholder="Phone Number" required>
+                </div>
+              </div>
+              <button class="btn-master w-100" type="submit">Register</button>
+              <p class="text-center mt-3">
+                Already have an account?
+                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+              </p>
+            </form>
+          </div>
+
+          <!-- Employer Form -->
+          <div id="employerForm" class="form-section d-none">
+            <form action="#" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="row gy-3 mb-4">
+                <div class="col-md-12">
+                  <label class="form-label">Email</label>
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="col-md-12">
+                  <label class="form-label">Password</label>
+                  <div class="password-wrapper position-relative">
+                    <input type="password" name="password" class="form-control password-field" placeholder="Password"
+                      required>
+                    <i
+                      class="bi bi-eye-slash toggle-password position-absolute end-0 top-50 translate-middle-y me-3"></i>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <label class="form-label">Confirm Password</label>
+                  <div class="password-wrapper position-relative">
+                    <input type="password" name="confirm_password" class="form-control password-field"
+                      placeholder="Confirm Password" required>
+                    <i
+                      class="bi bi-eye-slash toggle-password position-absolute end-0 top-50 translate-middle-y me-3"></i>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <label class="form-label">Employer Name</label>
+                  <input type="text" name="emp_name" class="form-control" placeholder="Employer Name" required>
+                </div>
+              </div>
+              <button class="btn-master w-100" type="submit">Register</button>
+              <p class="text-center mt-3">
+                Already have an account?
+                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+              </p>
+            </form>
+          </div>
+
+          <script>
+            const btnCandidate = document.getElementById('btnCandidate');
+            const btnEmployer = document.getElementById('btnEmployer');
+            const candidateForm = document.getElementById('candidateForm');
+            const employerForm = document.getElementById('employerForm');
+
+            btnCandidate.addEventListener('click', () => {
+              btnCandidate.classList.add('btn-primary', 'active');
+              btnCandidate.classList.remove('btn-outline-primary');
+              btnEmployer.classList.remove('btn-primary', 'active');
+              btnEmployer.classList.add('btn-outline-primary');
+              candidateForm.classList.remove('d-none');
+              employerForm.classList.add('d-none');
+            });
+
+            btnEmployer.addEventListener('click', () => {
+              btnEmployer.classList.add('btn-primary', 'active');
+              btnEmployer.classList.remove('btn-outline-primary');
+              btnCandidate.classList.remove('btn-primary', 'active');
+              btnCandidate.classList.add('btn-outline-primary');
+              employerForm.classList.remove('d-none');
+              candidateForm.classList.add('d-none');
+            });
+          </script>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reset Password Modal -->
+  <div class="modal fade" id="resetPasswordModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="resetPasswordModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="resetPasswordModalLabel">Reset Password</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
+              <div class="col-md-12">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+              </div>
+            </div>
+            <div class="text-center"><button class="btn-master w-100 mt-3" type="submit">Reset Password</button>
+            </div>
+            <!-- back to login -->
+            <div>
+              <p class="text-center mt-3">Remembered your password? <a href="javascript:void(0)" data-bs-toggle="modal"
+                  data-bs-target="#loginModal">Login</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Start whatsapp poup -->
+  <div class="whatsapp-widget">
+    <div class="whatsapp-popup" id="whatsappPopup">
+      <div class="popup-header">
+        <span>Chat with us</span>
+        <button class="close-btn" onclick="toggleWhatsApp()">×</button>
+      </div>
+      <div class="popup-body">
+        <a href="https://wa.me/8801700000000" target="_blank">
+          <div class="align-items-center d-flex gap-3 justify-content-start">
+            <div class="support-person-image position-relative">
+              <img class="rounded-5"
+                src="https://media-ccu1-2.cdn.whatsapp.net/v/t61.24694-24/169585961_1118360732038338_2984173382743843422_n.jpg?ccb=11-4&oh=01_Q5Aa2gHk2Px3NflqUCtTXYPzNc73cYvGtQ6vgYdVQ1CknRSa1Q&oe=68D816AD&_nc_sid=5e03e0&_nc_cat=111"
+                alt="WeCreativez WhatsApp Support">
+              <span class="support-person-available"></span>
+            </div>
+            <div class="">
+              <div class="support">Service Support</div>
+              <div class="supporter-name">Saiful Islam</div>
+              <div class="supporter-available">Available</div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+    <button class="whatsapp-button" onclick="toggleWhatsApp()">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </button>
+  </div>
+  <script>
+    function toggleWhatsApp() {
+      document.getElementById("whatsappPopup").classList.toggle("active");
+    }
+  </script>
+  <!-- End whatsapp poup -->
+
+  <div class="mobilenav">
+    <ul>
+      <li><a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#5f6368">
+            <path
+              d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z">
+            </path>
+          </svg>
+          <span>Home</span>
+        </a></li>
+
+      <li>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#5f6368">
+            <path
+              d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm0-80h640v-440H160v440Zm240-520h160v-80H400v80ZM160-200v-440 440Z">
+            </path>
+          </svg>
+          <span>Jobs</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#5f6368">
+            <path
+              d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z">
+            </path>
+          </svg>
+          <span>Companies</span>
+        </a>
+      </li>
+
+
+      <li>
+        <a href="javascript:void();" data-bs-toggle="modal" data-bs-target="#loginModal">
+          <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#5f6368">
+            <path
+              d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z">
+            </path>
+          </svg>
+          <span>Login</span>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+
+  <main class="main">
+
+
+
+    <!--Start Hero section -->
+    <section class="hero-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Content -->
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <h1 class="fw-bold mb-3 display-5">
+              Recruitment <br>
+              Connections, <span class="animate-heading">Simplified!</span>
+            </h1>
+            <p class="text-muted mb-4">
+              Connecting employers with skilled workers and reputable agencies, simplifying the recruitment process like
+              never before and transparent solutions for migrant workers.
+            </p>
+
+            <!-- Search Bar -->
+            <form
+              class=" hero-search-form d-flex align-items-center justify-content-between bg-white p-3 rounded-2  gap-2"
+              style=" box-shadow: 0px 18px 40px 0px rgba(25, 15, 9, 0.10);">
+              <div class=" input-section align-items-center d-flex gap-3 justify-content-between">
+                <div class="align-items-center d-flex gap-2 justify-content-start">
+                  <span class="input-group-text bg-white border-0 p-0">
+                    <i class="bi bi-briefcase text-muted"></i>
+                  </span>
+                  <input type="text" class="form-control border-0 p-0" placeholder="Job title..." style="    font-size: 1rem;
+                      font-weight: 600;">
+                </div>
+
+                <div class="align-items-center d-flex gap-2 justify-content-start">
+                  <select name="" id="" class="form-select border-0" style="    font-size: 1rem;
+                      font-weight: 600;">
+                    <option value="">City or Country</option>
+                    <option value="">America</option>
+                    <option value="">Bangladesh</option>
+                  </select>
+                </div>
+              </div>
+
+              <button class="btn-master align-items-center justify-content-center d-flex gap-2"
+                type="submit">
+                <i class="bi bi-search"></i> Search
+              </button>
+            </form>
+
+            <!-- Popular Searches -->
+            <!-- Popular Searches Section -->
+            <div class="popular-searches mt-5">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h6 class="text-muted mb-0">Popular Searches</h6>
+              </div>
+              <div class="d-flex align-items-center">
+                <button id="prevBtn" class="btn-master d-flex align-items-center justify-content-center me-2">
+                  <i class="bi bi-arrow-left text-white"></i>
+                </button>
+
+                <div class="category-slider position-relative overflow-hidden flex-grow-1">
+                  <div class="category-track d-flex gap-2 transition">
+                    <button class="category-btn btn btn-light border">
+                      <i class="bi bi-lightning-charge text-warning me-2"></i> Electrical
+                    </button>
+                    <button class="category-btn btn btn-light border">
+                      <i class="bi bi-tools text-primary me-2"></i> Welding
+                    </button>
+                    <button class="category-btn btn btn-light border">
+                      <i class="bi bi-people text-success me-2"></i> General Worker
+                    </button>
+                    <button class="category-btn btn btn-light border">
+                      <i class="bi bi-truck text-danger me-2"></i> Driver
+                    </button>
+                    <button class="category-btn btn btn-light border">
+                      <i class="bi bi-bricks text-info me-2"></i> Construction
+                    </button>
+                    <button class="category-btn btn btn-light border">
+                      <i class="bi bi-pc-display text-secondary me-2"></i> IT Support
+                    </button>
+                    <button class="category-btn btn btn-light border">
+                      <i class="bi bi-palette text-warning me-2"></i> Designer
+                    </button>
+                    <button class="category-btn btn btn-light border">
+                      <i class="bi bi-shop text-danger me-2"></i> Sales
+                    </button>
+                  </div>
+                </div>
+
+                <button id="nextBtn" class="btn-master d-flex align-items-center justify-content-center">
+                  <i class="bi bi-arrow-right text-white"></i>
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Right Images -->
+          <div class="col-lg-6">
+            <div class="d-flex flex-md-row justify-content-end align-items-center gap-3">
+              <div class="">
+                <img src="assets/img/hero/1.webp" class="img-fluid rounded-2 shadow-sm" alt="Worker Main" style="    width: 239px;
+                  height: 345px;
+                  object-fit: cover;">
+              </div>
+              <div class="d-flex flex-column gap-3">
+                <img src="assets/img/hero/2.webp" class="img-fluid rounded-2 shadow-sm" alt="Workers" style="    color: transparent;
+                  object-fit: cover;height: 198px;width: 238px;    border-radius: .375rem;">
+                <img src="assets/img/hero/3.webp" class="img-fluid rounded-2 shadow-sm" alt="Team" style=" color: transparent;
+                  object-fit: cover;height: 198px;width: 238px;    border-radius: .375rem;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--End Hero section -->
+
+  
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <!-- <img src="assets/img/hero-bg-abstract.jpg" alt="" data-aos="fade-in" class=""> -->
+
+      <div class="container">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2 class=" animate-heading">CV's / Candidates<br></h2>
+          <p>More than 800 employers each month search their candidates on our website.</p>
+        </div>
+        <!-- End Section Title -->
+
+
+        <div class="row gy-4 mt-5">
+
+          <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon">
+                <img class="rounded-circle" src="assets/img/testimonials/testimonials-4.jpg" alt="">
+              </div>
+              <h4 class="title mb-0"><a href="">Lorem Ipsum</a></h4>
+              <p class="fs-6 mt-0"> Digital Marketing</p>
+              <p class="fs-6 mb-3"><a href="#"><i class="bi bi-geo-alt me-1"></i> Bangladesh</a></p>
+              <a href="#" class="btn-master d-block text-center">
+                <i class="bi bi-info-circle me-1"></i> View Profile
+              </a>
+            </div>
+          </div><!--End Icon Box -->
+
+          <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon">
+                <img class="rounded-circle" src="assets/img/team/team-4.jpg" alt="">
+              </div>
+              <h4 class="title mb-0"><a href="">Lorem Ipsum</a></h4>
+              <p class="fs-6 mt-0"> Digital Marketing</p>
+              <p class="fs-6 mb-3"><a href="#"><i class="bi bi-geo-alt me-1"></i> Bangladesh</a></p>
+              <a href="#" class="btn-master d-block text-center">
+                <i class="bi bi-info-circle me-1"></i> View Profile
+              </a>
+            </div>
+          </div><!--End Icon Box -->
+
+          <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon">
+                <img class="rounded-circle" src="assets/img/team/team-3.jpg" alt="">
+              </div>
+              <h4 class="title mb-0"><a href="">Lorem Ipsum</a></h4>
+              <p class="fs-6 mt-0"> Digital Marketing</p>
+              <p class="fs-6 mb-3"><a href="#"><i class="bi bi-geo-alt me-1"></i> Bangladesh</a></p>
+              <a href="#" class="btn-master d-block text-center">
+                <i class="bi bi-info-circle me-1"></i> View Profile
+              </a>
+            </div>
+          </div><!--End Icon Box -->
+
+
+
+          <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon">
+                <img class="rounded-circle" src="assets/img/team/team-2.jpg" alt="">
+              </div>
+              <h4 class="title mb-0"><a href="">Lorem Ipsum</a></h4>
+              <p class="fs-6 mt-0"> Digital Marketing</p>
+              <p class="fs-6 mb-3"><a href="#"><i class="bi bi-geo-alt me-1"></i> Bangladesh</a></p>
+              <a href="#" class="btn-master d-block text-center">
+                <i class="bi bi-info-circle me-1"></i> View Profile
+              </a>
+            </div>
+          </div><!--End Icon Box -->
+
+
+
+          <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon">
+                <img class="rounded-circle" src="assets/img/team/team-1.jpg" alt="">
+              </div>
+              <h4 class="title mb-0"><a href="">Lorem Ipsum</a></h4>
+              <p class="fs-6 mt-0"> Digital Marketing</p>
+              <p class="fs-6 mb-3"><a href="#"><i class="bi bi-geo-alt me-1"></i> Bangladesh</a></p>
+              <a href="#" class="btn-master d-block text-center">
+                <i class="bi bi-info-circle me-1"></i> View Profile
+              </a>
+            </div>
+          </div><!--End Icon Box -->
+
+
+
+          <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon">
+                <img class="rounded-circle" src="assets/img/testimonials/testimonials-3.jpg" alt="">
+              </div>
+              <h4 class="title mb-0"><a href="">Lorem Ipsum</a></h4>
+              <p class="fs-6 mt-0"> Digital Marketing</p>
+              <p class="fs-6 mb-3"><a href="#"><i class="bi bi-geo-alt me-1"></i> Bangladesh</a></p>
+              <a href="#" class="btn-master d-block text-center">
+                <i class="bi bi-info-circle me-1"></i> View Profile
+              </a>
+            </div>
+          </div><!--End Icon Box -->
+
+
+
+          <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon">
+                <img class="rounded-circle" src="assets/img/testimonials/testimonials-2.jpg" alt="">
+              </div>
+              <h4 class="title mb-0"><a href="">Lorem Ipsum</a></h4>
+              <p class="fs-6 mt-0"> Digital Marketing</p>
+              <p class="fs-6 mb-3"><a href="#"><i class="bi bi-geo-alt me-1"></i> Bangladesh</a></p>
+              <a href="#" class="btn-master d-block text-center">
+                <i class="bi bi-info-circle me-1"></i> View Profile
+              </a>
+            </div>
+          </div><!--End Icon Box -->
+
+
+
+          <div class="col-md-6 col-lg-3" data-aos="zoom-out" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon">
+                <img class="rounded-circle" src="assets/img/testimonials/testimonials-1.jpg" alt="">
+              </div>
+              <h4 class="title mb-0"><a href="">Lorem Ipsum</a></h4>
+              <p class="fs-6 mt-0"> Digital Marketing</p>
+              <p class="fs-6 mb-3"><a href="#"><i class="bi bi-geo-alt me-1"></i> Bangladesh</a></p>
+              <a href="#" class="btn-master d-block text-center">
+                <i class="bi bi-info-circle me-1"></i> View Profile
+              </a>
+            </div>
+          </div><!--End Icon Box -->
+
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 class="animate-heading">Job Vacancies / Career<br></h2>
+        <p>More than 8000 jobs applicants each month search their career on our website.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-end">
+          <div class="col-md-3 mb-5">
+            <h5>Last Activity</h5>
+            <form method="get" id="last_activity">
+              <select name="employer_last_activity" class="form-select" onchange="this.form.submit();">
+                <option value="all">All CVs</option>
+                <option value="1">1 Day</option>
+                <option value="7">7 Days</option>
+                <option value="30">30 Days</option>
+
+              </select>
+            </form>
+          </div>
+        </div>
+
+        <div class="row gy-4">
+          <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Employer</th>
+                  <th scope="col">Posititon</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Job Category</th>
+                  <th scope="col">Location</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><a href="">9134</a></th>
+                  <td>Shop</td>
+                  <td>15 Nov</td>
+                  <td>Childress dress</td>
+                  <td>Saudi Arabia,Saudi Arabia</td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="">4134</a></th>
+                  <td>House ,Company</td>
+                  <td>10 May</td>
+                  <td>Male Thobe and kandura</td>
+                  <td>Saudi Arabia,Saudi Arabia</td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="">7530</a></th>
+                  <td>Shop</td>
+                  <td>15 June</td>
+                  <td>Childress dress</td>
+                  <td>United Arab Emirates,United Arab Emirates</td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="">9134</a></th>
+                  <td>Shop</td>
+                  <td>15 Nov</td>
+                  <td>Childress dress</td>
+                  <td>Saudi Arabia,Saudi Arabia</td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="">4134</a></th>
+                  <td>House ,Company</td>
+                  <td>10 May</td>
+                  <td>Male Thobe and kandura</td>
+                  <td>Saudi Arabia,Saudi Arabia</td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="">7530</a></th>
+                  <td>Shop</td>
+                  <td>15 June</td>
+                  <td>Childress dress</td>
+                  <td>United Arab Emirates,United Arab Emirates</td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="">4134</a></th>
+                  <td>House ,Company</td>
+                  <td>10 May</td>
+                  <td>Male Thobe and kandura</td>
+                  <td>Saudi Arabia,Saudi Arabia</td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="">7530</a></th>
+                  <td>Shop</td>
+                  <td>15 June</td>
+                  <td>Childress dress</td>
+                  <td>United Arab Emirates,United Arab Emirates</td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="">9134</a></th>
+                  <td>Shop</td>
+                  <td>15 Nov</td>
+                  <td>Childress dress</td>
+                  <td>Saudi Arabia,Saudi Arabia</td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="">4134</a></th>
+                  <td>House ,Company</td>
+                  <td>10 May</td>
+                  <td>Male Thobe and kandura</td>
+                  <td>Saudi Arabia,Saudi Arabia</td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="">7530</a></th>
+                  <td>Shop</td>
+                  <td>15 June</td>
+                  <td>Childress dress</td>
+                  <td>United Arab Emirates,United Arab Emirates</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              </ul>
+            </nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+
+
+
+
+    <!-- Team Section -->
+    <section id="team" class="team section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 class="animate-heading">Team</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 class="animate-heading">Contact</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+          <iframe style="border:0; width: 100%; height: 270px;"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+            frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!-- End Google Maps -->
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+1 5589 55488 55</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>info@example.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+              data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container footer-top">
+      <!-- <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">OnePage</span>
+          </a>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
+            donna mare fermentum iaculis eu non diam phasellus.</p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>A108 Adam Street</p>
+          <p>New York, NY 535022</p>
+          <p>United States</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+          <p><strong>Email:</strong> <span>info@example.com</span></p>
+        </div>
+
+      </div> -->
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Skillify</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="#">Hasanah</a> Distributed by <a href="#">Skillify
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    document.querySelectorAll('.toggle-password').forEach(icon => {
+      icon.addEventListener('click', function () {
+        const input = this.closest('.password-wrapper').querySelector('.password-field');
+        const isPassword = input.type === 'password';
+        input.type = isPassword ? 'text' : 'password';
+        this.classList.toggle('bi-eye');
+        this.classList.toggle('bi-eye-slash');
+      });
+    });
+  </script>
+
+  <script>
+    const track = document.querySelector('.category-track');
+    const nextBtn = document.getElementById('nextBtn');
+    const prevBtn = document.getElementById('prevBtn');
+
+    let index = 0;
+    const totalItems = document.querySelectorAll('.category-btn').length;
+    const visibleItems = window.innerWidth <= 768 ? 1 : 3;
+
+    function updateSlider() {
+      const itemWidth = document.querySelector('.category-btn').offsetWidth + 8; // 8px gap
+      track.style.transform = `translateX(-${index * itemWidth}px)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+      if (index < totalItems - visibleItems) index++;
+      updateSlider();
+    });
+
+    prevBtn.addEventListener('click', () => {
+      if (index > 0) index--;
+      updateSlider();
+    });
+
+    window.addEventListener('resize', () => location.reload());
+  </script>
+
+
+
+
+
+</body>
+
+</html>
