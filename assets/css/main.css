@@ -102,7 +102,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--heading-color);
+  /* color: var(--heading-color); */
   font-family: var(--heading-font);
 }
 
@@ -246,7 +246,8 @@ h6 {
   padding: 20px 0;
   transition: all 0.5s;
   z-index: 997;
-  border-bottom: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+  /* border-bottom: 1px solid color-mix(in srgb, var(--accent-color), transparent 85%); */
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
 }
 
 .header .logo {
@@ -254,7 +255,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 59px;
   margin-right: 8px;
 }
 
@@ -2499,6 +2500,69 @@ tbody, td, tfoot, th, thead, tr {
     border-style: solid;
     border-width: 0;
 }
+
+/* Candidate details page */
+ .info-card {
+      background: #fafafa;
+      border: 1px solid #cdcdcd;
+      border-radius: 10px;
+      padding: 25px;
+    }
+    .info-card h5{
+      font-size: 1.5rem;
+      line-height: 2rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      margin-bottom: 15px;
+    }
+    .info-icon {
+      background-color: #fff3e0;
+      color: #f57c00;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+    .info-text h6 {
+      margin: 0;
+      font-weight: 600;
+      color: #333;
+    }
+    .info-text p {
+      margin: 0;
+      color: #666;
+      font-size: 14px;
+    }
+    .detail-section-title {
+      font-weight: 700;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .detail-item {
+      display: flex;
+      align-items: start;
+      gap: 30px;
+      margin-bottom: 15px;
+    }
+    .circle-icon {
+      background-color: #ff9800;
+      color: #fff;
+      border-radius: 50%;
+      min-width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+    }
 
 
 
