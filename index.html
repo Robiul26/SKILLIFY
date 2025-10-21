@@ -415,40 +415,7 @@
       </div>
     </div>
   </div>
-  <!-- Start whatsapp poup -->
-  <div class="whatsapp-widget">
-    <div class="whatsapp-popup" id="whatsappPopup">
-      <div class="popup-header">
-        <span>Chat with us</span>
-        <button class="close-btn" onclick="toggleWhatsApp()">×</button>
-      </div>
-      <div class="popup-body">
-        <a href="https://wa.me/+8801676104261" target="_blank">
-          <div class="align-items-center d-flex gap-3 justify-content-start">
-            <div class="support-person-image position-relative">
-              <img class="rounded-5" src="assets/img/team/team-3.jpg" alt="WeCreativez WhatsApp Support">
-              <span class="support-person-available"></span>
-            </div>
-            <div class="">
-              <div class="support">Service Support</div>
-              <div class="supporter-name">Saiful Islam</div>
-              <div class="supporter-available">Available</div>
-            </div>
-          </div>
-        </a>
 
-      </div>
-    </div>
-    <button class="whatsapp-button" onclick="toggleWhatsApp()">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-    </button>
-  </div>
-  <script>
-    function toggleWhatsApp() {
-      document.getElementById("whatsappPopup").classList.toggle("active");
-    }
-  </script>
-  <!-- End whatsapp poup -->
 
   <div class="mobilenav">
     <ul>
@@ -1155,6 +1122,41 @@
 
   </footer>
 
+  <!-- Start whatsapp poup -->
+  <div class="whatsapp-widget">
+    <div class="whatsapp-popup" id="whatsappPopup">
+      <div class="popup-header">
+        <span>Chat with us</span>
+        <button class="close-btn" onclick="toggleWhatsApp()">×</button>
+      </div>
+      <div class="popup-body">
+        <a href="https://wa.me/+8801676104261" target="_blank">
+          <div class="align-items-center d-flex gap-3 justify-content-start">
+            <div class="support-person-image position-relative">
+              <img class="rounded-5" src="assets/img/team/team-3.jpg" alt="WeCreativez WhatsApp Support">
+              <span class="support-person-available"></span>
+            </div>
+            <div class="">
+              <div class="support">Service Support</div>
+              <div class="supporter-name">Saiful Islam</div>
+              <div class="supporter-available">Available</div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+    <button class="whatsapp-button" onclick="toggleWhatsApp()">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </button>
+  </div>
+  <script>
+    function toggleWhatsApp() {
+      document.getElementById("whatsappPopup").classList.toggle("active");
+    }
+  </script>
+  <!-- End whatsapp poup -->
+
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
@@ -1188,35 +1190,35 @@
   </script>
 
   <script>
-  const track = document.querySelector('.category-track');
-  const nextBtn = document.getElementById('nextBtn');
-  const prevBtn = document.getElementById('prevBtn');
+    const track = document.querySelector('.category-track');
+    const nextBtn = document.getElementById('nextBtn');
+    const prevBtn = document.getElementById('prevBtn');
 
-  let index = 0;
-  let visibleItems = window.innerWidth <= 768 ? 1 : 3;
-  const totalItems = document.querySelectorAll('.category-btn').length;
+    let index = 0;
+    let visibleItems = window.innerWidth <= 768 ? 1 : 3;
+    const totalItems = document.querySelectorAll('.category-btn').length;
 
-  function updateSlider() {
-    const itemWidth = document.querySelector('.category-btn').offsetWidth + 8; // 8px gap
-    track.style.transform = `translateX(-${index * itemWidth}px)`;
-  }
+    function updateSlider() {
+      const itemWidth = document.querySelector('.category-btn').offsetWidth + 8; // 8px gap
+      track.style.transform = `translateX(-${index * itemWidth}px)`;
+    }
 
-  nextBtn.addEventListener('click', () => {
-    if (index < totalItems - visibleItems) index++;
-    updateSlider();
-  });
+    nextBtn.addEventListener('click', () => {
+      if (index < totalItems - visibleItems) index++;
+      updateSlider();
+    });
 
-  prevBtn.addEventListener('click', () => {
-    if (index > 0) index--;
-    updateSlider();
-  });
+    prevBtn.addEventListener('click', () => {
+      if (index > 0) index--;
+      updateSlider();
+    });
 
-  // Just update visibleItems and slider position, not reload
-  window.addEventListener('resize', () => {
-    visibleItems = window.innerWidth <= 768 ? 1 : 3;
-    updateSlider();
-  });
-</script>
+    // Just update visibleItems and slider position, not reload
+    window.addEventListener('resize', () => {
+      visibleItems = window.innerWidth <= 768 ? 1 : 3;
+      updateSlider();
+    });
+  </script>
 
 
 

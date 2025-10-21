@@ -707,6 +707,129 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Whatsapp
+--------------------------------------------------------------*/
+
+/* Whats app popup */
+.whatsapp-widget {
+  position: fixed;
+  bottom: 123px;
+  right: 15px;
+  z-index: 9999;
+}
+
+.whatsapp-button {
+  background-color: #25d366;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+.whatsapp-button img {
+  width: 30px;
+  height: 30px;
+}
+
+.whatsapp-popup {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  width: 296px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* whatsapp Popup open state */
+.whatsapp-popup.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* whatsapp Popup header */
+.popup-header {
+  background: #25d366;
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popup-header .close-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/*whatsapp Popup body */
+.popup-body {
+  padding: 15px;
+}
+.popup-body a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 8px;
+}
+.popup-body a img {
+  width: 50px;
+  height: 50px;
+}
+.popup-body a:hover {
+  background-color: #f5f5f5;
+}
+.popup-body .support{
+  color: #777;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 16px;
+}
+.popup-body .supporter-name{
+ color: #444;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 14px;
+}
+.popup-body .supporter-available{
+font-size: 11px;
+    font-weight: 400;
+    color: #999;
+    margin-top: 4px;
+    line-height: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.popup-body .support-person-available{
+width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 999999;
+    bottom: 3px;
+    right: 3px;
+    border-radius: 50%;
+        background-color: #4CAF50;
+} 
+
+/*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
 .scroll-top {
@@ -714,7 +837,7 @@ h6 {
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: 15px;
+  bottom: 80px;
   z-index: 99999;
   background-color: var(--accent-color);
   width: 40px;
@@ -2275,127 +2398,6 @@ body {
 
 
 
-/* Whats app popup */
-/* WhatsApp floating button container */
-.whatsapp-widget {
-  position: fixed;
-  bottom: 70px;
-  right: 15px;
-  z-index: 9999;
-}
-
-/* WhatsApp Button */
-.whatsapp-button {
-  background-color: #25d366;
-  border: none;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: transform 0.2s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.whatsapp-button:hover {
-  transform: scale(1.1);
-}
-.whatsapp-button img {
-  width: 30px;
-  height: 30px;
-}
-
-/* Popup panel */
-.whatsapp-popup {
-  position: absolute;
-  bottom: 70px;
-  right: 0;
-  width: 296px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  overflow: hidden;
-  opacity: 0;
-  transform: translateY(20px);
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-
-/* Popup open state */
-.whatsapp-popup.active {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-
-/* Popup header */
-.popup-header {
-  background: #25d366;
-  color: #fff;
-  padding: 10px;
-  font-size: 16px;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.popup-header .close-btn {
-  background: transparent;
-  border: none;
-  color: #fff;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-/* Popup body */
-.popup-body {
-  padding: 15px;
-}
-.popup-body a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 8px;
-}
-.popup-body a img {
-  width: 50px;
-  height: 50px;
-}
-.popup-body a:hover {
-  background-color: #f5f5f5;
-}
-.popup-body .support{
-  color: #777;
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 16px;
-}
-.popup-body .supporter-name{
- color: #444;
-    font-weight: 700;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 14px;
-}
-.popup-body .supporter-available{
-font-size: 11px;
-    font-weight: 400;
-    color: #999;
-    margin-top: 4px;
-    line-height: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.popup-body .support-person-available{
-width: 10px;
-    height: 10px;
-    position: absolute;
-    z-index: 999999;
-    bottom: 3px;
-    right: 3px;
-    border-radius: 50%;
-        background-color: #4CAF50;
-}
 
 /* form password field show/hide */
 .password-wrapper {
