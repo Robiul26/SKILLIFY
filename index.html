@@ -1188,31 +1188,36 @@
   </script>
 
   <script>
-    const track = document.querySelector('.category-track');
-    const nextBtn = document.getElementById('nextBtn');
-    const prevBtn = document.getElementById('prevBtn');
+  const track = document.querySelector('.category-track');
+  const nextBtn = document.getElementById('nextBtn');
+  const prevBtn = document.getElementById('prevBtn');
 
-    let index = 0;
-    const totalItems = document.querySelectorAll('.category-btn').length;
-    const visibleItems = window.innerWidth <= 768 ? 1 : 3;
+  let index = 0;
+  let visibleItems = window.innerWidth <= 768 ? 1 : 3;
+  const totalItems = document.querySelectorAll('.category-btn').length;
 
-    function updateSlider() {
-      const itemWidth = document.querySelector('.category-btn').offsetWidth + 8; // 8px gap
-      track.style.transform = `translateX(-${index * itemWidth}px)`;
-    }
+  function updateSlider() {
+    const itemWidth = document.querySelector('.category-btn').offsetWidth + 8; // 8px gap
+    track.style.transform = `translateX(-${index * itemWidth}px)`;
+  }
 
-    nextBtn.addEventListener('click', () => {
-      if (index < totalItems - visibleItems) index++;
-      updateSlider();
-    });
+  nextBtn.addEventListener('click', () => {
+    if (index < totalItems - visibleItems) index++;
+    updateSlider();
+  });
 
-    prevBtn.addEventListener('click', () => {
-      if (index > 0) index--;
-      updateSlider();
-    });
+  prevBtn.addEventListener('click', () => {
+    if (index > 0) index--;
+    updateSlider();
+  });
 
-    window.addEventListener('resize', () => location.reload());
-  </script>
+  // Just update visibleItems and slider position, not reload
+  window.addEventListener('resize', () => {
+    visibleItems = window.innerWidth <= 768 ? 1 : 3;
+    updateSlider();
+  });
+</script>
+
 
 
 
