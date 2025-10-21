@@ -713,7 +713,7 @@ h6 {
 /* Whats app popup */
 .whatsapp-widget {
   position: fixed;
-  bottom: 123px;
+  bottom: 138px;
   right: 15px;
   z-index: 9999;
 }
@@ -837,7 +837,7 @@ width: 10px;
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: 80px;
+  bottom: 93px;
   z-index: 99999;
   background-color: var(--accent-color);
   width: 40px;
