@@ -2353,7 +2353,7 @@ body {
     width: 24px;
     height: 18px;
     margin-right: 8px;
-    background: url(/assets/img/flags.png) no-repeat;
+    background: url(../../assets/img/flags.png) no-repeat;
     vertical-align: middle;
   }
 
