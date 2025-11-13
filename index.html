@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>SKILLIFY</title>
+  <title>SKILLED VILLAGE</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -23,11 +23,10 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
 
   <!-- Icon -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"> -->
 
 
   <!-- Main CSS File -->
@@ -93,25 +92,7 @@
           </li>
 
 
-          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
-          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                    class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> -->
+
           <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -128,8 +109,7 @@
 
       <div class="dropdown" style="position: relative; display: inline-block;">
         <a class="btn-master p-0 d-none d-lg-block me-3" href="javascript:void(0);" id="lang-btn">
-          <img src="assets/img/lang.png" alt=""
-            style="width:32px;height:32px;">
+          <img src="assets/img/lang.png" alt="" style="width:32px;height:32px;">
         </a>
         <div id="lang-dropdown">
 
@@ -480,7 +460,8 @@
               Connections, <span class="animate-heading">Simplified!</span>
             </h1>
             <p class="text-muted mb-4">
-              Connecting employers with skilled workers and reputable agencies, simplifying the recruitment process like
+              Connecting employers with skilled workers and reputable agencies, simplifying the
+              recruitment process like
               never before and transparent solutions for migrant workers.
             </p>
 
@@ -493,18 +474,42 @@
                   <span class="input-group-text bg-white border-0 p-0">
                     <i class="bi bi-briefcase text-muted"></i>
                   </span>
-                  <input type="text" class="form-control border-0 p-0" placeholder="Job title..." style="    font-size: 1rem;
-                      font-weight: 600;">
+                  <input type="text" class="form-control border-0 p-0" placeholder="Skill Type..."
+                    style="font-size: 1rem; font-weight: 600;">
                 </div>
 
-                <div class="align-items-center d-flex gap-2 justify-content-start">
-                  <select name="" id="" class="form-select border-0" style="    font-size: 1rem;
-                      font-weight: 600;">
-                    <option value="">City or Country</option>
-                    <option value="">America</option>
-                    <option value="">Bangladesh</option>
-                  </select>
+                <div class="">
+                  <div class="container py-5 text-center">
+                    <div class="country-dropdown">
+                      <div class="dropdown-btn" id="dropdownBtn">
+                        <span id="selectedCountry">City or Country</span>
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="overlay" id="overlay"></div>
+
+                  <div class="country-list" id="countryList">
+                    <div class="country-item"><img src="https://flagcdn.com/w20/bh.png">Bahrain</div>
+                    <div class="country-item"><img src="https://flagcdn.com/w20/bd.png">Bangladesh</div>
+                    <div class="country-item"><img src="https://flagcdn.com/w20/in.png">India</div>
+                    <div class="country-item"><img src="https://flagcdn.com/w20/kw.png">Kuwait</div>
+                    <div class="country-item"><img src="https://flagcdn.com/w20/np.png">Nepal</div>
+                    <div class="country-item"><img src="https://flagcdn.com/w20/om.png">Oman</div>
+                    <div class="country-item"><img src="https://flagcdn.com/w20/pk.png">Pakistan</div>
+                    <div class="country-item"><img src="https://flagcdn.com/w20/qa.png">Qatar</div>
+                    <div class="country-item"><img src="https://flagcdn.com/w20/sa.png">Saudi Arabia</div>
+                    <div class="country-item"><img src="https://flagcdn.com/w20/lk.png">Sri Lanka</div>
+                    <div class="country-item"><img src="https://flagcdn.com/w20/ae.png">United Arab
+                      Emirates</div>
+                  </div>
+
                 </div>
+
+
+
+
               </div>
 
               <button class="btn-master align-items-center justify-content-center d-flex gap-2" type="submit">
@@ -516,7 +521,7 @@
             <!-- Popular Searches Section -->
             <div class="popular-searches mt-5">
               <div class="d-flex justify-content-between align-items-center mb-3">
-                <h6 class="text-muted mb-0">Popular Searches</h6>
+                <h6 class="text-muted mb-0">Skilled Candidates</h6>
               </div>
               <div class="d-flex align-items-center">
                 <button id="prevBtn" class="btn-master d-flex align-items-center justify-content-center me-2">
@@ -580,6 +585,37 @@
         </div>
       </div>
     </section>
+
+    <script>
+      const dropdownBtn = document.getElementById('dropdownBtn');
+      const countryList = document.getElementById('countryList');
+      const overlay = document.getElementById('overlay');
+      const selectedCountry = document.getElementById('selectedCountry');
+
+      dropdownBtn.addEventListener('click', () => {
+        countryList.classList.toggle('show');
+        overlay.classList.toggle('show');
+        document.body.style.overflow = 'hidden';
+        document.body.style.paddingRight = '15px';
+      });
+
+      overlay.addEventListener('click', closeDropdown);
+
+      document.querySelectorAll('.country-item').forEach(item => {
+        item.addEventListener('click', () => {
+          selectedCountry.textContent = item.textContent.trim();
+          closeDropdown();
+        });
+      });
+
+      function closeDropdown() {
+        countryList.classList.remove('show');
+        overlay.classList.remove('show');
+        document.body.style.overflow = 'auto';
+        document.body.style.paddingRight = '0px';
+      }
+    </script>
+
 
     <!--End Hero section -->
 
@@ -1166,13 +1202,9 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
